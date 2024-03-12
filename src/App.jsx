@@ -38,13 +38,22 @@ function App() {
           </div>
         </div>
 
-          <TwoBoxes classname={''} text1={'BASIC'} text2={'PRO'}/>
 
-        <div class="containerWhyUs">
-          <h1 class="headerWhyUs">WHY US?</h1>
+        <div className="containerPortfolio">
+          <div className="containerBackgroundPortfolio">
+            <ul>
+              <li>Restaurants and Cafes</li>
+              <li>E-commerce and Retail</li>
+              <li>Professional Services</li>
+              <li></li>
+              <li>Altro</li>
 
-          <TwoBoxes classname={'WhyUs'} text1={'PRICING'} text2={'SPEED'}/>
-          <TwoBoxes classname={'WhyUs'} text1={'RELIABILITY'} text2={'YAKI'}/>
+            </ul>
+
+
+          </div>
+
+
         </div>
 
       </body>
