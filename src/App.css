@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    background-color: #1B1B1B;
+}
+
+
+
+
+/* Navigation menu */
+
+header {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1180px;
+    min-height: 80px;
+
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 0 30px;
+}
+
+.menu li a {
+    color: white;
+    font-family: Arial;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.menu li a:hover {
+    color: rgb(231, 231, 231);
+}
+
+
+
+
+
+
+/* Header */
+
+.headContainer {
+    background: rgb(93,224,230);
+    background: linear-gradient(90deg, rgba(93,224,230,1) 0%, rgba(93,224,230,1) 34%, rgba(36,132,195,1) 80%, rgba(0,74,173,1) 100%);
+    width: 100%;
+    height: 75vh;
+    box-sizing: border-box;
+}
+
+.h1HeadContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.h1Title {
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 50px;
+    font-family: 'Roboto';
+    font-style: italic;
+    line-height: 1;
+    z-index: 0;
+}
+
+.imageHead {
+    margin-left: -150px;
+}
+
+
+/* Boxes container */
+
+.containerBoxes {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+}
+
+
+.box1, .box2 {
+    width: 580px;
+    height: 416px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.2);
+    background-color: #57D978;
+
+    margin: 0 20px;
+
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    transition-delay: 0.2s;
+}
+
+.box2 {
+    background: linear-gradient(144deg, #57D978 0%, #57D978 40%, rgba(255,222,89,1) 80%, rgba(255,222,89,1) 100%);
+}
+
+.box1Title, .box2Title {
+    color: black;
+    font-weight: 800;
+    font-size: 35px;
+    font-family: 'Roboto';
+    margin-top: 25px;
+}
+
+
+.box1:hover, .box2:hover {
+    box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.3); /* Makes the shadow more pronounced */
+}
+
+.box2:hover {
+    background-color: #63de7e;
+    ;
+}
+
+.box2:hover {
+    background: linear-gradient(144deg, #63de7e 0%, #63de7e 40%, rgba(255,230,100,1) 80%, rgba(255,230,100,1) 100%);
+}
+
+
+
+
+/* why us container */
+
+.headerWhyUs {
+    color: azure;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-style: italic ;
+    font-size: 50px;
+}
+
+
+.containerBoxesWhyUs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.box1WhyUs, .box2WhyUs {
+    width: 580px;
+    height: 376px;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+
+    box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.1);
+    background: #212121;
+
+    margin: 0 20px;
+
+}
+
+
+
+.box1TitleWhyUs, .box2TitleWhyUs {
+    color: whitesmoke;
+    font-weight: 800;
+    font-size: 35px;
+    font-family: 'Roboto';
+    margin-top: 25px;
+}
+
