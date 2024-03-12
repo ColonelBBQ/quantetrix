@@ -1,12 +1,17 @@
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import headerImage from '../src/assets/header-image.png'
 import Logo from '../src/assets/logo-quantetrix.png'
 import TwoBoxes from '../src/components/twoBoxes.jsx'
-
+import restaurantPortfolfio from './components/restaurantPortfolio.jsx'
+import NavMenu from './components/navMenu.jsx';
+import ButtonIndustry from './components/buttonsIndustry.jsx'
+import RestaurantPortfolio from './components/restaurantPortfolio.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [industry, setIndustry] = useState('');
+
 
   return (
     <>
@@ -17,20 +22,7 @@ function App() {
 
       <body>
         <div className='headContainer'>
-          <header>
-            <nav>
-              <a href="main.html#home">
-                <img src={Logo} alt="Logo" class="logo" />
-              </a>
-              <ul class="menu">
-                <li><a href="main.html#home">Home</a></li>
-                <li><a href="main.html#products">Prodotti</a></li>
-                <li><a href="main.html#about">Chi Siamo</a></li>
-                <li><a href="main.html#contact">Contatti</a></li>
-              </ul>
-            </nav>
-          </header>
-
+          <NavMenu />
 
           <div className='h1HeadContainer'>
             <h1 className='h1Title'>BUILD YOUR <br /> WEBSITE TODAY</h1>
@@ -39,22 +31,21 @@ function App() {
         </div>
 
 
+
+
         <div className="containerPortfolio">
           <div className="containerBackgroundPortfolio">
-            <ul>
-              <li>Restaurants and Cafes</li>
-              <li>E-commerce and Retail</li>
-              <li>Professional Services</li>
-              <li></li>
-              <li>Altro</li>
-
-            </ul>
-
+            <ButtonIndustry industry={industry} setIndustry={setIndustry} />
+            {industry === 'restaurantPortfolio' && <RestaurantPortfolio />}
+            {industry === 'ecommercePortfolio' && <RestaurantPortfolio />}
+            {industry === 'professionalPortfolio' && <RestaurantPortfolio />}
+            {industry === 'healthPortfolio' && <RestaurantPortfolio />}
+            {industry === 'other' && <RestaurantPortfolio />}
 
           </div>
-
-
         </div>
+
+
 
       </body>
     </>
