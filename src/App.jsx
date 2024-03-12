@@ -41,7 +41,6 @@ function App() {
             {industry === 'professionalPortfolio' && <RestaurantPortfolio />}
             {industry === 'healthPortfolio' && <RestaurantPortfolio />}
             {industry === 'other' && <RestaurantPortfolio />}
-
           </div>
         </div>
 

@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.title {
+    color: white;
+    font-size: 42px;
+    font-family: 'roboto';
+    font-weight: 700;
+
+}
