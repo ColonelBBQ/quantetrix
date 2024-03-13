@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react'
 import './App.css'
 import headerImage from '../src/assets/header-image.png'
 import Logo from '../src/assets/logo-quantetrix.png'
-import TwoBoxes from '../src/components/twoBoxes.jsx'
-import restaurantPortfolfio from './components/restaurantPortfolio.jsx'
 import NavMenu from './components/navMenu.jsx';
 import ButtonIndustry from './components/buttonsIndustry.jsx'
 import RestaurantPortfolio from './components/restaurantPortfolio.jsx'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +21,7 @@ function App() {
 
       <body>
         <div className='headContainer'>
-          <NavMenu />
+          <NavMenu logo={Logo} font={'Arial'} color={'white'} />
 
           <div className='h1HeadContainer'>
             <h1 className='h1Title'>BUILD YOUR <br /> WEBSITE TODAY</h1>
