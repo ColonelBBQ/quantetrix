@@ -21,7 +21,7 @@ function App() {
 
       <body>
         <div className='headContainer'>
-          <NavMenu logo={Logo} font={'Arial'} color={'white'} />
+          <NavMenu logo={Logo} font={'Arial'} color={'white'} colorhover={'gray'} />
 
           <div className='h1HeadContainer'>
             <h1 className='h1Title'>BUILD YOUR <br /> WEBSITE TODAY</h1>
